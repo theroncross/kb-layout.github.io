@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #fff;
+  font: 14px "Segoe UI", "Helvetica";
+  color: #222;
+}
+
+code {
+  background-color: #eee;
+  color: inherit;
+}
+
+.tippy-box {
+  font: 14px "Inconsolata", "Courier New", monospace;
+}
+
+.wrapper {
+  padding: 1rem;
+  width: 62rem;
+}
+
+.container,
+.hand {
+  display: flex;
+}
+
+.hand {
+  margin: 0 1rem;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.col-d1 {
+  margin-top: 1rem;
+}
+
+.col-d1-5 {
+  margin-top: 0.75rem;
+}
+
+.col-d2 {
+  margin-top: 1rem;
+}
+
+.col-d3 {
+  margin-top: 3rem;
+}
+
+.col-d4 {
+  margin-top: 2.5rem;
+}
+
+.col-d14 {
+  margin-top: 11.75rem;
+}
+
+.col-d15 {
+  margin-top: 15rem;
+}
+
+.unused {
+  opacity: 0.4;
+  cursor: help;
+}
+
+.key {
+  font: 14px "Inconsolata", "Courier New", monospace;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.25rem;
+  padding: 1rem;
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid #bbb;
+  border-radius: 0.3rem;
+  box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  background-color: #fafafa;
+  vertical-align: top;
+  text-align: center;
+  color: #333;
+}
+.key.mod {
+  background-color: #333;
+  color: #f0f0f0;
+}
+.key.homing {
+  border-color: #666;
+  font-weight: bold;
+  box-shadow: 1px 1px 7px 0 rgba(0, 0, 0, 0.2);
+}
+.key.combo {
+  cursor: help;
+}
+.key.combo::before {
+  position: absolute;
+  top: 0.25rem;
+  right: 0.25rem;
+  border-radius: 50%;
+  background-color: #e0f0f9;
+  width: 1rem;
+  height: 1rem;
+  color: #222;
+  content: "c";
+  line-height: 0.8rem;
+  font-weight: normal;
+}
+.key.tap {
+  cursor: pointer;
+}
+.key.tap::after {
+  position: absolute;
+  top: 0.25rem;
+  left: 0.25rem;
+  border-radius: 50%;
+  background-color: #ffe7bf;
+  color: #333;
+  width: 1rem;
+  height: 1rem;
+  line-height: 0.9rem;
+  content: "t";
+  font-weight: normal;
+}
+.key.sticky {
+  cursor: pointer;
+  background-color: #ffe4e1;
+}
+.key > input,
+.key > .extra {
+  position: absolute;
+  opacity: 0;
+  transition: all 0.1s ease-in;
+}
+.key > input:checked ~ .extra {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+label.key {
+  cursor: pointer;
+}
+
+label.key:hover {
+  background-color: #ffe7bf;
+  color: #000;
+}
+
+.combo:hover {
+  background-color: #e0f0f9;
+  color: #222;
+}
