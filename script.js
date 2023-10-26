@@ -7,8 +7,8 @@ let layer_base = [
 
 let layer_nav = [
   ["esc"  , "enter", " "      , " "     , " ", null, null, "pgup", "home"  , "up"  , "end"  , "del"],
-  ["alt"  , "win"  , "shift"  , "ctrl"  , " ", null, null, "pgdn", "left"  , "down", "right", "bksp"],
-  ["alt:S", "win:S", "shift:S", "ctrl:S", " ", null, null, " "   , "S-tab", "tab" , " "    , " "],
+  ["alt"  , "gui"  , "shift"  , "ctrl"  , " ", null, null, "pgdn", "left"  , "down", "right", "bksp"],
+  ["alt:S", "gui:S", "shift:S", "ctrl:S", " ", null, null, " "   , "S-tab", "tab" , " "    , " "],
   [null   , null   , null     , "NAV"   , " ", " " , " " , " "   , " "     , null  , null   , null]
 ]
 
@@ -22,7 +22,7 @@ let layer_sym = [
 let layer_fun = [
   ["rgb\nspi", "rgb\nhui", "rgb\nsai", "rgb\nvai", "rgb\nmod" , null, null, " "   , "F1" , "F2" , "F3" , "F4"],
   ["rgb\nspd", "rgb\nhud", "rgb\nsad", "rgb\nvad", "rgb\nrmod", null, null, "caps", "F5" , "F6" , "F7" , "F8"],
-  ["alt:S"   , "win:S"   , "shift:S" , "ctrl:S"  , "rgb\ntog" , null, null, "ins" , "F9" , "F10", "F11", "F12"],
+  ["alt:S"   , "gui:S"   , "shift:S" , "ctrl:S"  , "rgb\ntog" , null, null, "ins" , "F9" , "F10", "F11", "F12"],
   [null      , null      , null      , "EXT"     , " "        , " " , " " , " "   , "SYM", null , null , null]
 ]
 
