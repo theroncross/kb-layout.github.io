@@ -1,108 +1,76 @@
 let layer_base = [
-  ["Q" , "W" , "F" , "P"  , "B"    , null , null, "J"    , "L"  , "U" , "Y" , "'"],
-  ["A" , "R" , "S" , "T"  , "G"    , null , null, "M"    , "N"  , "E" , "I" , "O"],
-  ["Z" , "X" , "C" , "D"  , "V"    , null , null, "K"    , "H"  , "," , "." , "/"],
-  [null, null, null, "NAV", "shift", "tab", ";" , "space", "SYM", null, null, null]
+  ["Q" , "V" , "M" , "P"  , "K"    , null , null, "/"    , ","  , "." , "X" , "Z"],
+  ["N" , "R" , "S" , "T"  , "G"    , null , null, "'"    , "A"  , "I" , "H" , "C"],
+  ["B" , "W" , "F" , "D"  , "J"    , null , null, "-"    , "O"  , "U" , "L" , "Y"],
+  [null, null, null, "shift", "space", "enter", "tab" , "E", null, null, null, null]
 ]
 
 let layer_nav = [
-  ["esc"  , "enter", " "      , " "     , " ", null, null, "pgup", "home"  , "up"  , "end"  , "del"],
-  ["alt"  , "gui"  , "shift"  , "ctrl"  , " ", null, null, "pgdn", "left"  , "down", "right", "bksp"],
-  ["alt:S", "gui:S", "shift:S", "ctrl:S", " ", null, null, " "   , "S-tab", "tab" , " "    , " "],
-  [null   , null   , null     , "NAV"   , " ", " " , " " , " "   , " "     , null  , null   , null]
+  ["prtsc", "home" , "up"     , "end"   , "pgup", null, null, "pgup", "ptab", "wkspup"  , "ntab"  , "del"],
+  ["esc"  , "left"  , "down"  , "right"  , "pgdn", null, null, "pgdn", "winlft"  , "wkspdn", "winrgt", "bksp"],
+  ["ctrl:Z", "ctrl:X", "ctrl:C", "ctrl:V", "winmax", null, null, " "   , "wksp1", "wksp2" , "wksp3"    , "wksp4"],
+  [null   , null   , null     , " "   , " ", " " , " " , NAV   , null     , null  , null   , null]
 ]
 
 let layer_sym = [
-  ["!" , "@" , "#" , "$", "%", null, null, "^" , "&"  , "*" , "-" , "="],
-  ["1" , "2" , "3" , "4", "5", null, null, "6" , "7"  , "8" , "9" , "0"],
-  ["[" , "]" , "{" , "}", "`", null, null, "\\", "("  , ")" , "." , "/"],
-  [null, null, null, " ", " ", " " , " " , " " , "SYM", null, null, null]
+  ["|" , "`" , "*" , "&", "[", null, null, "]" , "7"  , "8" , "9" , "\\"],
+  [";" , "^" , "%" , "$", "(", null, null, ")" , "4"  , "5" , "6" , "="],
+  ["~" , "#" , "@" , "!", "{", null, null, "}", "1"  , "2" , "3" , "+"],
+  [null, null, null, " ", SYM, " " , ":" , "0" , null, null, null, null]
 ]
 
 let layer_fun = [
-  ["rgb\nspi", "rgb\nhui", "rgb\nsai", "rgb\nvai", "rgb\nmod" , null, null, " "   , "F1" , "F2" , "F3" , "F4"],
-  ["rgb\nspd", "rgb\nhud", "rgb\nsad", "rgb\nvad", "rgb\nrmod", null, null, "caps", "F5" , "F6" , "F7" , "F8"],
-  ["alt:S"   , "gui:S"   , "shift:S" , "ctrl:S"  , "rgb\ntog" , null, null, "ins" , "F9" , "F10", "F11", "F12"],
-  [null      , null      , null      , "EXT"     , " "        , " " , " " , " "   , "SYM", null , null , null]
+  ["F9", "F10", "F11", "F12", " " , null, null, " "     , " "     , "volup" , " "     , " "],
+  ["F5", "F6" , "F7" , "F8" , " " , null, null, "nument", "ptrk"  , "voldn" , "ntrk"  , " "],
+  ["F1", "F2" , "F3" , "F4" , " " , null, null, "scroll", "mouse1", "mouse3", "mouse2", " "],
+  [null      , null      , null   , " " , " " , FUN     , " " , " "   , null , null , null , null]
 ]
 
 let combo_layer = "base";
 let combos = [
   {
-    "input": ["D", "H"],
-    "output": "ENTER"
+    "input": [".", ","],
+    "output": ":"
   },
   {
-    "input": ["W", "F", ",", "."],
-    "output": "!"
+    "input": ["K", "/"],
+    "output": "["
   },
   {
-    "input": ["P", "L"],
-    "output": "?"
+    "input": ["G", "'"],
+    "output": "("
   },
   {
-    "input": [",", "."],
-    "output": "-"
-  },
-  {
-    "input": ["H", ","],
-    "output": "_"
-  },
-  {
-    "input": [".", "/"],
-    "output": "="
-  },
-  {
-    "input": ["Z", "X"],
-    "output": "UNDO"
-  },
-  {
-    "input": ["X", "C"],
-    "output": "CUT"
-  },
-  {
-    "input": ["C", "D"],
-    "output": "COPY"
-  },
-  {
-    "input": ["X", "C", "D"],
-    "output": "PASTE"
+    "input": ["J", "-"],
+    "output": "{"
   },
 ]
 
-let col_class_left = ["col-pinky", "col-ring", "col-middle", "col-index", "col-inner", "col-thumb"]
-let col_class_right = ["col-thumb", "col-inner", "col-index", "col-middle", "col-ring", "col-pinky"]
-let col_class = col_class_left.concat(col_class_right)
-let col_hand = ["left", "left", "left", "left", "left", "left", "right", "right", "right", "right", "right", "right"]
+let col_class_left = ["pinky", "ring", "middle", "index", "inner", "thumb"]
+let col_class = col_class_left.concat(col_class_left.toReversed())
+let col_hand = Array(12).fill("left", 0, 5).fill("right", 6, 11)
 let row_class = ["", "", "", "mod"]
 
 let tippy_placement = ["top", "left", "right", "bottom"]
 
 function get_combos(layer, key_label) {
-  if (layer != combo_layer) {
-    return []
-  }
-  let c = [];
-  for (let combo of combos) {
-    if (combo.input.includes(key_label)) {
-      c.push(combo)
-    }
-  }
-  return c;
+  return layer === combo_layer
+    ? layer.filter((combo) => combo.input.includes(key_label))
+    : [];
 }
 
-function render_layout(layer, keys) {
-  for (let col = 0; col < keys[0].length; col++) {
+function render_layout(layer, rows) {
+  for (const col of rows[0].keys) {
     let base_container = document.getElementById("layer-" + layer + "-" + col_hand[col])
     let column = document.createElement("div")
     column.className = "col " + col_class[col]
     base_container.append(column)
-    for (let row = 0; row < keys.length; row++) {
+    for (const row of rows.keys()) {
       let key_id = `r${row}c${col}`
-      if (!keys[row][col]) {
+      if (!rows[row][col]) {
         continue
       }
-      let tokens = keys[row][col].split(":")
+      let tokens = rows[row][col].split(":")
       let key_label = tokens[0]
       let key_mod = tokens[1] || ""
       let key = document.createElement("span")
