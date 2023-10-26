@@ -6,9 +6,9 @@
 }
 
 html {
-  background-color: #fff;
+  background-color: #2E3440;
   font: 14px "Segoe UI", "Helvetica";
-  color: #222;
+  color: #D8DEE9;
 }
 
 code {
@@ -18,6 +18,8 @@ code {
 
 .tippy-box {
   font: 14px "Inconsolata", "Courier New", monospace;
+  color: #D8DEE9;
+  background-color: #2E3440;
 }
 
 .wrapper {
@@ -78,14 +80,14 @@ code {
   padding: 1rem;
   width: 3rem;
   height: 3rem;
-  border: 1px solid #bbb;
+  border: 1px solid #3B4252;
   border-radius: 0.3rem;
   box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.2);
   overflow: hidden;
-  background-color: #fafafa;
+  background-color: #434C5E;
   vertical-align: top;
   text-align: center;
-  color: #333;
+  color: #ECEFF4;
 }
 .key.mod {
   background-color: #333;
@@ -96,20 +98,20 @@ code {
   top: 0.25rem;
   right: 0.25rem;
   border-radius: 50%;
-  background-color: #e0f0f9;
+  background-color: #5E81AC;
   width: 1rem;
   height: 1rem;
-  color: #222;
+  color: #3B4252;
   content: "c";
   line-height: 0.8rem;
   font-weight: normal;
 }
-.key.S {
+.key.S {git
   cursor: pointer;
-  background-color: #ffe4e1;
+  color: #ae38c9;
 }
 
 .combo:hover {
-  background-color: #e0f0f9;
+  background-color: #81A1C1;
   color: #222;
 }
