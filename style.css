@@ -91,14 +91,6 @@ code {
   background-color: #333;
   color: #f0f0f0;
 }
-.key.homing {
-  border-color: #666;
-  font-weight: bold;
-  box-shadow: 1px 1px 7px 0 rgba(0, 0, 0, 0.2);
-}
-.key.combo {
-  cursor: help;
-}
 .key.combo::before {
   position: absolute;
   top: 0.25rem;
@@ -112,52 +104,9 @@ code {
   line-height: 0.8rem;
   font-weight: normal;
 }
-.key.tap {
-  cursor: pointer;
-}
-.key.tap::after {
-  position: absolute;
-  top: 0.25rem;
-  left: 0.25rem;
-  border-radius: 50%;
-  background-color: #ffe7bf;
-  color: #333;
-  width: 1rem;
-  height: 1rem;
-  line-height: 0.9rem;
-  content: "t";
-  font-weight: normal;
-}
-.key.sticky {
+.key.S {
   cursor: pointer;
   background-color: #ffe4e1;
-}
-.key > input,
-.key > .extra {
-  position: absolute;
-  opacity: 0;
-  transition: all 0.1s ease-in;
-}
-.key > input:checked ~ .extra {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 1;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: #f5f5f5;
-  color: #333;
-}
-
-label.key {
-  cursor: pointer;
-}
-
-label.key:hover {
-  background-color: #ffe7bf;
-  color: #000;
 }
 
 .combo:hover {

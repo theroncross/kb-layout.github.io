@@ -10,290 +10,42 @@
 <body>
 <!-- partial:index.partial.html -->
 <div class="wrapper">
-    <h1>Donut Shop</h1>
+    <h1>Donut Shop Key Layout</h1>
     <ul>
         <li>Hover over the [C] keys to read about combos.</li>
-        <li>Tap on the [T] keys to see mod- and layer-taps.</li>
         <li>Blank keys are transparent</li>
-        <li>Callum-style one-shot mods in pink</li>
+        <li>Sticky mods in pink</li>
         <li>Page credits to baobaozi <a href=https://codepen.io/baobaozi/pen/mdOjpQp>https://codepen.io/baobaozi/pen/mdOjpQp</a></li>
     </ul>
-    <h2>Default</h2>
-    <p>Canary with some combos</p>
+    <h2>Typing</h2>
+    <p>Alphas follow Colemak-DH. Uses combos, thumb shift, right space.</p>
     <div class="container">
-        <div class="hand">
-            <div class="col col-pinky">
-                <span class="key">W</span>
-                <span class="key">C</span>
-                <span class="key combo combo-undo">Q</span>
-            </div>
-            <div class="col col-ring">
-                <span class="key">L</span>
-                <span class="key">R</span>
-                <span class="key combo combo-paste combo-cut-x combo-undo">J</span>
-            </div>
-            <div class="col col-middle">
-                <span class="key">Y</span>
-                <span class="key">S</span>
-                <span class="key combo combo-paste combo-copy-c combo-cut-c">V</span>
-            </div>
-            <div class="col col-index">
-                <span class="key combo combo-ques">P</span>
-                <span class="key homing">T</span>
-                <span class="key combo combo-paste combo-copy-d combo-enter">D</span>
-                <span class="key mod">EXT</span>
-            </div>
-            <div class="col col-inner">
-                <span class="key">B</span>
-                <span class="key">G</span>
-                <span class="key">K</span>
-                <span class="key mod">shift</span>
-            </div>
-            <div class="col col-thumb">
-                <span class="key mod">tab</span>
-            </div>
-        </div>
-        <div class="hand">
-            <div class="col col-thumb">
-                <span class="key mod">;</span>
-            </div>
-            <div class="col col-inner">
-                <span class="key">Z</span>
-                <span class="key">M</span>
-                <span class="key">X</span>
-                <span class="key mod">space</span>
-            </div>
-            <div class="col col-index">
-                <span class="key combo combo-ques">F</span>
-                <span class="key homing">N</span>
-                <span class="key combo combo-enter combo-underscore">H</span>
-                <span class="key mod">SYM</span>
-            </div>
-            <div class="col col-middle">
-                <span class="key">O</span>
-                <span class="key">E</span>
-                <span class="key combo combo-minus combo-underscore">/</spa>
-            </div>
-            <div class="col col-ring">
-                <span class="key">U</span>
-                <span class="key">I</span>
-                <span class="key combo combo-minus">,</span>
-            </div>
-            <div class="col col-pinky">
-                <span class="key">'</span>
-                <span class="key">A</span>
-                <span class="key">.</span>
-            </div>
-        </div>
+        <div class="hand" id="layer-base-left"></div>
+        <div class="hand" id="layer-base-right"></div>
     </div>
     <h2>Numbers/Symbols</h2>
-    <p>Hold down the SYMBOL key to activate this layer. Home-row numbers with shifted punctuation above and brackets and additional chars below. Callum mods on right hand bottom row.</p>
+    <p>Hold down the SYM key to activate this layer. Home-row numbers with shifted punctuation above and brackets and additional chars below. Callum mods on right hand bottom row.</p>
     <div class="container">
-        <div class="hand">
-            <div class="col col-pinky">
-                <span class="key">!</span>
-                <span class="key">1</span>
-                <span class="key">[</span>
-            </div>
-            <div class="col col-ring">
-                <span class="key">@</span>
-                <span class="key">2</span>
-                <span class="key">]</span>
-            </div>
-            <div class="col col-middle">
-                <span class="key">#</span>
-                <span class="key">3</span>
-                <span class="key">{</span>
-            </div>
-            <div class="col col-index">
-                <span class="key">$</span>
-                <span class="key">4</span>
-                <span class="key">}</span>
-                <span class="key mod"></span>
-            </div>
-            <div class="col col-inner">
-                <span class="key">%</span>
-                <span class="key">5</span>
-                <span class="key">`</span>
-                <span class="key mod"></span>
-            </div>
-            <div class="col col-thumb">
-                <span class="key mod"></span>
-            </div>
-        </div>
-        <div class="hand">
-            <div class="col col-thumb">
-                <span class="key mod"></span>
-            </div>
-            <div class="col col-inner">
-                <span class="key">^</span>
-                <span class="key">6</span>
-                <span class="key">\</span>
-                <span class="key mod"></span>
-            </div>
-            <div class="col col-index">
-                <span class="key">&</span>
-                <span class="key">7</span>
-                <span class="key sticky">ctrl</span>
-                <span class="key mod">SYM</span>
-            </div>
-            <div class="col col-middle">
-                <span class="key">*</span>
-                <span class="key">8</span>
-                <span class="key sticky">shift</span>
-            </div>
-            <div class="col col-ring">
-                <span class="key">(</span>
-                <span class="key">9</span>
-                <span class="key sticky">win</span>
-            </div>
-            <div class="col col-pinky">
-                <span class="key">)</span>
-                <span class="key">0</span>
-                <span class="key sticky">alt</span>
-            </div>
-        </div>
+        <div class="hand" id="layer-sym-left"></div>
+        <div class="hand" id="layer-sym-right"></div>
     </div>
-    <h2>Extend</h2>
-    <p>Hold down the EXTEND key to activate this layer. DreymaR-style extend layer (<a href="https://dreymar.colemak.org/layers-extend.html">source</a>) with some tweaks. No mouse keys, no cut/copy/paste since it's on default layer combos. Callum mods on left-hand bottom row.</p>
+    <h2>Navigation</h2>
+    <p>Hold down the NAV key to activate this layer. Inspired by DreymaR-style extend layer (<a href="https://dreymar.colemak.org/layers-extend.html">source</a>) with some tweaks. No mouse keys, no cut/copy/paste since it's on default layer combos. Sticky mods on left-hand bottom row.</p>
     <div class="container">
-        <div class="hand">
-            <div class="col col-pinky">
-                <span class="key">esc</span>
-                <span class="key">alt</span>
-                <span class="key sticky">alt</span>
-            </div>
-            <div class="col col-ring">
-                <span class="key">enter</span>
-                <span class="key">win</span>
-                <span class="key sticky">win</span>
-            </div>
-            <div class="col col-middle">
-                <span class="key"></span>
-                <span class="key">shift</span>
-                <span class="key sticky">shift</span>
-            </div>
-            <div class="col col-index">
-                <span class="key"></span>
-                <span class="key">ctrl</span>
-                <span class="key sticky">ctrl</span>
-                <span class="key mod">EXT</span>
-            </div>
-            <div class="col col-inner">
-                <span class="key"></span>
-                <span class="key"></span>
-                <span class="key"></span>
-                <span class="key mod"></span>
-            </div>
-            <div class="col col-thumb">
-                <span class="key mod"></span>
-            </div>
-        </div>
-        <div class="hand">
-            <div class="col col-thumb">
-                <span class="key mod"></span>
-            </div>
-            <div class="col col-inner">
-                <span class="key">pgup</span>
-                <span class="key">pgdn</span>
-                <span class="key"></span>
-                <span class="key mod"></span>
-            </div>
-            <div class="col col-index">
-                <span class="key">home</span>
-                <span class="key"><i class="fa-solid fa-arrow-left"></i></span>
-                <span class="key"></span>
-                <span class="key mod"></span>
-            </div>
-            <div class="col col-middle">
-                <span class="key"><i class="fa-solid fa-arrow-up"></i></span>
-                <span class="key"><i class="fa-solid fa-arrow-down"></i></span>
-                <span class="key"></span>
-            </div>
-            <div class="col col-ring">
-                <span class="key">end</span>
-                <span class="key"><i class="fa-solid fa-arrow-right"></i></span>
-                <span class="key"></span>
-            </div>
-            <div class="col col-pinky">
-                <span class="key">del</span>
-                <span class="key">bksp</span>
-                <span class="key"></span>
-            </div>
-        </div>
+        <div class="hand" id="layer-nav-left"></div>
+        <div class="hand" id="layer-nav-right"></div>
     </div>
     <h2>Function</h2>
-    <p>Hold down EXTEND and SYMBOL keys to activate this layer. F keys on the right hand. Callum-style mods on the left hand plus RGB configuration (not shown).</p>
+    <p>Hold down NAV and SYM keys to activate this layer. F-keys on the right hand. Sticky mods on the left hand plus RGB configuration (not shown).</p>
     <div class="container">
-        <div class="hand">
-            <div class="col col-pinky">
-                <span class="key">rgb</span>
-                <span class="key">rgb</span>
-                <span class="key sticky">alt</span>
-            </div>
-            <div class="col col-ring">
-                <span class="key">rgb</span>
-                <span class="key">rgb</span>
-                <span class="key sticky">win</span>
-            </div>
-            <div class="col col-middle">
-                <span class="key">rgb</span>
-                <span class="key">rgb</span>
-                <span class="key sticky">shift</span>
-            </div>
-            <div class="col col-index">
-                <span class="key">rgb</span>
-                <span class="key">rgb</span>
-                <span class="key sticky">ctrl</span>
-                <span class="key mod">EXT</span>
-            </div>
-            <div class="col col-inner">
-                <span class="key">rgb</span>
-                <span class="key">rgb</span>
-                <span class="key">rgb</span>
-                <span class="key mod"></span>
-            </div>
-            <div class="col col-thumb">
-                <span class="key mod"></span>
-            </div>
-        </div>
-        <div class="hand">
-            <div class="col col-thumb">
-                <span class="key mod"></span>
-            </div>
-            <div class="col col-inner">
-                <span class="key"></span>
-                <span class="key">caps</span>
-                <span class="key">ins</span>
-                <span class="key mod"></span>
-            </div>
-            <div class="col col-index">
-                <span class="key">F1</span>
-                <span class="key">F5</span>
-                <span class="key">F9</span>
-                <span class="key mod">SYM</span>
-            </div>
-            <div class="col col-middle">
-                <span class="key">F2</span>
-                <span class="key">F6</span>
-                <span class="key">F10</span>
-            </div>
-            <div class="col col-ring">
-                <span class="key">F3</span>
-                <span class="key">F7</span>
-                <span class="key">F11</span>
-            </div>
-            <div class="col col-pinky">
-                <span class="key">F4</span>
-                <span class="key">F8</span>
-                <span class="key">F12</span>
-            </div>
-        </div>
+        <div class="hand" id="layer-fun-left"></div>
+        <div class="hand" id="layer-fun-right"></div>
     </div>
 </div>
 
-<script src='https://unpkg.com/@popperjs/core@2'></script>
-<script src='https://unpkg.com/tippy.js@6'></script><script  src="./script.js"></script>
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="https://unpkg.com/tippy.js@6"></script>
+<script  src="./script.js"></script>
 
 </body>
 </html>
