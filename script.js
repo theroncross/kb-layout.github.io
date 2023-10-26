@@ -1,29 +1,29 @@
 let layer_base = [
-  ["Q", "W", "F", "P", "B", null, null, "J", "L", "U", "Y", "'"],
-  ["A", "R", "S", "T", "G", null, null, "M", "N", "E", "I", "O"],
-  ["Z", "X", "C", "D", "V", null, null, "K", "H", ",", ".", "/"],
-  [null, null, null, "NAV", "shift", "tab", ";", "space", "SYM", null, null, null]
+  ["Q" , "W" , "F" , "P"  , "B"    , null , null, "J"    , "L"  , "U" , "Y" , "'"],
+  ["A" , "R" , "S" , "T"  , "G"    , null , null, "M"    , "N"  , "E" , "I" , "O"],
+  ["Z" , "X" , "C" , "D"  , "V"    , null , null, "K"    , "H"  , "," , "." , "/"],
+  [null, null, null, "NAV", "shift", "tab", ";" , "space", "SYM", null, null, null]
 ]
 
 let layer_nav = [
-  ["esc", "enter", " ", " ", " ", null, null, "pgup", "home", "up", "end", "del"],
-  ["alt", "win", "shift", "ctrl", " ", null, null, "pgdn", "left", "down", "right", "bksp"],
-  ["alt:S", "win:S", "shift:S", "ctrl:S", " ", null, null, " ", " ", " ", " ", " "],
-  [null, null, null, "NAV", " ", " ", " ", " ", " ", null, null, null]
+  ["esc"  , "enter", " "      , " "     , " ", null, null, "pgup", "home"  , "up"  , "end"  , "del"],
+  ["alt"  , "win"  , "shift"  , "ctrl"  , " ", null, null, "pgdn", "left"  , "down", "right", "bksp"],
+  ["alt:S", "win:S", "shift:S", "ctrl:S", " ", null, null, " "   , "S-tab", "tab" , " "    , " "],
+  [null   , null   , null     , "NAV"   , " ", " " , " " , " "   , " "     , null  , null   , null]
 ]
 
 let layer_sym = [
-  ["!", "@", "#", "$", "%", null, null, "^", "&", "*", "-", "="],
-  ["1", "2", "3", "4", "5", null, null, "6", "7", "8", "9", "0"],
-  ["[", "]", "{", "}", "`", null, null, "\\", "(", ")", ".", "/"],
-  [null, null, null, " ", " ", " ", " ", " ", "SYM", null, null, null]
+  ["!" , "@" , "#" , "$", "%", null, null, "^" , "&"  , "*" , "-" , "="],
+  ["1" , "2" , "3" , "4", "5", null, null, "6" , "7"  , "8" , "9" , "0"],
+  ["[" , "]" , "{" , "}", "`", null, null, "\\", "("  , ")" , "." , "/"],
+  [null, null, null, " ", " ", " " , " " , " " , "SYM", null, null, null]
 ]
 
 let layer_fun = [
-  ["rgb\nspi", "rgb\nhui", "rgb\nsai", "rgb\nvai", "rgb\nmod",  null, null, " ",    "F1", "F2",  "F3",  "F4"],
-  ["rgb\nspd", "rgb\nhud", "rgb\nsad", "rgb\nvad", "rgb\nrmod", null, null, "caps", "F5", "F6",  "F7",  "F8"],
-  ["alt:S",    "win:S",    "shift:S",  "ctrl:S",   "rgb\ntog",  null, null, "ins",  "F9", "F10", "F11", "F12"],
-  [null,       null,       null,       "EXT",      " ",         " ",  " ",  " ",    "SYM", null, null,  null]
+  ["rgb\nspi", "rgb\nhui", "rgb\nsai", "rgb\nvai", "rgb\nmod" , null, null, " "   , "F1" , "F2" , "F3" , "F4"],
+  ["rgb\nspd", "rgb\nhud", "rgb\nsad", "rgb\nvad", "rgb\nrmod", null, null, "caps", "F5" , "F6" , "F7" , "F8"],
+  ["alt:S"   , "win:S"   , "shift:S" , "ctrl:S"  , "rgb\ntog" , null, null, "ins" , "F9" , "F10", "F11", "F12"],
+  [null      , null      , null      , "EXT"     , " "        , " " , " " , " "   , "SYM", null , null , null]
 ]
 
 let combo_layer = "base";
